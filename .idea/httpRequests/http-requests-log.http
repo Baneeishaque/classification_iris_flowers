@@ -1,0 +1,56 @@
+GET http://localhost:5000/iris_flower_prediction/5.0/3.5/1.3/0.3
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T055100.200.json
+
+###
+
+GET http://localhost:5000/iris_flower_prediction/5.9/3.0/5.1/1.8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T054918.200.json
+
+###
+
+GET http://localhost:5000/iris_flower_prediction/5.2/5/5/5
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T054819.200.json
+
+###
+
+GET http://localhost:5000/iris_flower_prediction/5/5/5/5
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T054728.200.json
+
+###
+
+GET http://localhost:5000/iris_flower_prediction/5
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T054702.500.json
+
+###
+
+GET http://localhost:5000/iris_flower_prediction/5
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T054541.500.json
+
+###
+
+GET http://localhost:5000/iris_flower_prediction/5.2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-18T054525.500.json
+
+###
+

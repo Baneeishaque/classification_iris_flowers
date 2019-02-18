@@ -1,8 +1,7 @@
-# Save Model Using Pickle
-import pickle
-
+# Save Model Using joblib
 import pandas
 from sklearn import model_selection
+from sklearn.externals import joblib
 from sklearn.linear_model import LogisticRegression
 
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
@@ -18,12 +17,12 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_s
 model = LogisticRegression()
 model.fit(X_train, Y_train)
 # save the model to disk
-filename = 'pickle_finalized_model.sav'
-pickle.dump(model, open(filename, 'wb'))
+filename = 'joblib_finalized_model.sav'
+joblib.dump(model, filename)
 
 # some time later...
 
 # load the model from disk
-loaded_model = pickle.load(open(filename, 'rb'))
+loaded_model = joblib.load(filename)
 result = loaded_model.score(X_test, Y_test)
 print(result)
