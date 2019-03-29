@@ -16,7 +16,7 @@ def get_data_frame():
 
 
 def main():
-    dataset = get_data_frame();
+    dataset = get_data_frame()
     # shape
     print(dataset.shape)
 

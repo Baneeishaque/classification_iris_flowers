@@ -1,5 +1,6 @@
+import pickle
+
 from sklearn import model_selection
-from sklearn.externals import joblib
 from sklearn.neighbors import KNeighborsClassifier
 
 import dataset_preparation
@@ -20,10 +21,10 @@ knn.fit(X_train, Y_train)
 
 # save the model to disk
 filename = 'pickle_iris_flowers_finalized_model.sav'
-joblib.dump(knn, filename)
+pickle.dump(knn, open(filename, 'wb'))
 
 # load the model from disk
-loaded_model = joblib.load(filename)
+loaded_model = pickle.load(open(filename, 'rb'))
 
 # define one new instance
 Xnew = [[5.4, 3.4, 1.7, 0.2]]
